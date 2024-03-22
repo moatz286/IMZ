@@ -1,0 +1,108 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0;
+  color: #204887;
+}
+
+p {
+  color: grey;
+  font-size: large;
+}
+
+footer {
+  width: 100%;
+}
+
+.contact-link {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+
+.design {
+  margin-bottom: 9rem;
+}
+
+.linkedin {
+  color: #0077B5;
+}
+
+.x-twitter {
+  color: black;
+}
+
+.t-brand,
+.icons-color {
+  color: #2da9cf;
+}
+
+.c-logo {
+  width: 25%;
+}
+
+.btn-labe {
+  color: white;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.employee {
+  margin-bottom: 20px;
+}
+
+.round-avi {
+  /* border-radius: 50%; */
+  border: 1px solid #0077B5;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.service-card,
+#portfolios {
+  margin: 1.3rem auto;
+}
+
+.services-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  margin-bottom: 30px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#scrollToTopBtn.show {
+  display: block;
+}
+
+.service {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service i {
+  margin-bottom: 10px;
+}

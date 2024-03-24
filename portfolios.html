@@ -6,7 +6,15 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMZ | Portfolios</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" type="text/plain"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -41,98 +49,129 @@
       </div>
     </nav>
   </header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <div class="employee">
-          <img src="images/logo.png" alt="Employee 1" class="img-fluid round-avi">
-          <div class="info">
-            <h2>John Doe</h2>
-            <p>Web Developer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 text-center">
-        <div class="employee">
-          <img src="images/logo.png" alt="Employee 1" class="img-fluid round-avi">
-          <div class="info">
-            <h2>John Doe</h2>
-            <p>Web Developer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+  <div class="container mt-4">
+    <div class="mb-3">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Filter by Category
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item filter" data-category="all" href="#">All</a>
+          <a class="dropdown-item filter" data-category="mobile" href="#">Mobile</a>
+          <a class="dropdown-item filter" data-category="web" href="#">Web</a>
+          <a class="dropdown-item filter" data-category="data" href="#">Data Management</a>
         </div>
       </div>
     </div>
-    <hr>
     <div class="row">
-      <div class="col-md-6 text-center">
-        <div class="employee">
-          <img src="images/logo.png" alt="Employee 1" class="img-fluid round-avi">
-          <div class="info">
-            <h2>John Doe</h2>
-            <p>Web Developer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card all mobile">
+          <img src="images/Logo.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Mobile Card</h5>
+            <p class="card-text">Description of the Mobile card.</p>
+            <a href="#" class="btn btn-primary">View More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 text-center">
-        <div class="employee">
-          <img src="images/logo.png" alt="Employee 1" class="img-fluid round-avi">
-          <div class="info">
-            <h2>John Doe</h2>
-            <p>Web Developer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card all web">
+          <img src="images/Logo.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Web Card</h5>
+            <p class="card-text">Description of the Web card.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-4 mb-4">
+        <div class="card all data">
+          <img src="images/hr_dash.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Data Management Card</h5>
+            <p class="card-text">Description of the Data Management card.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card all data">
+          <img src="images/flight.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Flight Price Prediction</h5>
+            <p class="card-text">Description of the Data Management card.</p>
+            <a href="assests/Flight Price Prediction_Final Report-1.pdf" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card all data">
+          <img src="images/Logo.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">International breweries</h5>
+            <p class="card-text">Description of the Data Management card.</p>
+            <a href="assests/International_breweries.pdf" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card all data">
+          <img src="images/Logo.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Procurement Analytics</h5>
+            <p class="card-text">Description of the Data Management card.</p>
+            <a href="assests/Procurement Analytics.pdf" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card all data">
+          <img src="images/Logo.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Player Scouting & Player Recruitment</h5>
+            <p class="card-text">Description of the Data Management card.</p>
+            <a href="assests/Data_Analysis_Player_Scouting_&_Player_recruitment_Project.pdf" class="btn btn-primary">View More</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-center">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="row">
-      <div class="col-lg-4 col-sm-4">
-        <p>Site Links:</p>
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+      <div class="col-lg-12 text-center ">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#services">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolios.html">Portfolios</a>
+          <li>
+            <a href="portfolios.html">Portfolios</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+          <li>
+            <a href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
+          <li>
+            <a href="contact.html">Contact us</a>
           </li>
         </ul>
       </div>
-      <div class="col-lg-4 col-sm-4 ">
-        <p>Follow Us on Social Media:</p>
-        <div class="contact-link">
+      <div class="col-lg-12  text-center">
+        <p>Follow us on Social Media :</p>
 
-          <a href="https://www.linkedin.com"><i class="fab fa-lg fa-linkedin linkedin"></i></a>
-          <a href="https://www.x.com"><i class="fa-brands fa-x-twitter x-twitter bg-light"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-        </div>
-        <p>&copy; 2024 IMZ</p>
-      </div>
-      <div class="col-lg-4 col-sm-4">
-        <p class="design">Site Design:</p>
-        <p>
-          Made with
-          <i class="fa-solid fa-heart" style="color: red;"></i>
+        <a href="https://www.linkedin.com"><i class="fab fa-lg fa-linkedin linkedin"></i></a>
+        <a href="https://www.x.com"><i class="fa-brands fa-x-twitter x-twitter bg-light"></i></a>
+        <!-- <a href="#"><i class="fab fa-instagram fa-lg"></i></a> -->
 
-          by Jimmy
-
-        </p>
       </div>
     </div>
+    <div class="col-md-12 text-center copy-right">
+      <p>&copy; 2024 IMZ Business. All rights reserved.</p>
+    </div>
+
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" type="text/plain"></script>
+  <!-- End of Footer -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>

@@ -1,17 +1,37 @@
-// Get the button element
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show scroll button when reaching the end of the page
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.classList.add("show");
-    } else {
-        scrollToTopBtn.classList.remove("show");
-    }
+window.onscroll = function () {
+    scrollFunction()
 };
 
-// Scroll to top when the button is clicked
-scrollToTopBtn.addEventListener("click", function() {
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+} // Scroll to the top of the page when the button is clicked 
+function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-});
+}
+
+// $('.filter').click(function() {
+//     var category = $(this).data('category');
+//     $('.card').each(function() {
+//       if (category === 'all' || $(this).hasClass(category)) {
+//         $(this).removeClass('hidden');
+//       } else {
+//         $(this).addClass('hidden');
+//       }
+//     });
+//   });
+
+  $('.filter').click(function() {
+    var category = $(this).data('category');
+    $('.card').each(function() {
+      if (category === 'all' || $(this).hasClass(category)) {
+        $(this).parent().removeClass('hidden');
+      } else {
+        $(this).parent().addClass('hidden');
+      }
+    });
+  });

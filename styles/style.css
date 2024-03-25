@@ -92,14 +92,7 @@ p {
 .social-icons li {
   margin-right: 10px;
 }
-#portfolios{
-  width: 90%;
-  height: 40%;
-}
-#portfolios img {
-  height: 600px;
-  width: 400px;
-}
+
 .service-card,
 #portfolios {
   margin: 1.3rem auto;

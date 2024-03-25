@@ -35,3 +35,20 @@ function topFunction() {
       }
     });
   });
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert('Please fill out all required fields.');
+        event.preventDefault();
+    }
+
+    if (!email.match(emailRegex)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+    }
+});

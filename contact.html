@@ -5,13 +5,15 @@
     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMZ | Contact Us</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="styles/style.css" rel="stylesheet">  
-  <script src="scripts/script.js"></script>
 </head>
 <body>
-<header>
+  <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand " href="index.html"><span class="t-brand">IMZ</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,20 +45,21 @@
     <h1>Contact Us</h1>
     
     <p>Feel free to get in touch with us using the form below:</p>
-    
-    <form id="contactForm" action="" method="post">
+    <p id="formMessage"></p>
+  </p>
+    <form id="contactForm" name="contactForm" action="email.php" method="post">
         <div class="mb-3">
-            <label for="name" class="form-label">Name:</label>
+          <label for="name" class="form-label"><span class="red-star">*</span> Name:</label>
             <input type="text" id="name" name="name" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
+            <label for="email" class="form-label"><span class="red-star">*</span> Email:</label>
             <input type="email" id="email" name="email" class="form-control">
-        </div>
+          </div>
 
         <div class="mb-3">
-            <label for="message" class="form-label">Message:</label>
+            <label for="message" class="form-label"><span class="red-star">*</span> Message:</label>
             <textarea id="message" name="message" class="form-control" rows="4"></textarea>
         </div>
         
@@ -70,18 +73,18 @@
     
     <div class="contact-info mb-3">
         <i class="fas fa-phone fa-lg t-brand"></i>
-        <p>+968 9110 8423</p>
+        <p>00971568852851</p>
     </div>
     
     <div class="contact-info mb-3">
-        <i class="fas fa-envelope fa-lg t-brand"></i>
-        <p>IMZsolutions4u@gmail.com</p>
+      <i class="fas fa-envelope fa-lg t-brand"></i>
+      <p>IMZsolutions4u@gmail.com</p>
     </div>
     
     
   </div>
   <footer class="footer">
-
+    
     <div class="row">
       <div class="col-lg-12 text-center ">
         <ul class="list-unstyled">
@@ -100,24 +103,23 @@
         </ul>
       </div>
       <div class="col-lg-12  text-center">
-        <p>Follow us on Social Media :</p>
+        <p>Find Us at :</p>
 <a href="https://www.linkedin.com/company/imz-business-solutions/"><i class="fab fa-lg fa-linkedin linkedin"></i></a>
-        <a href="https://www.facebook.com/share/NzHysHFCUCr3i66L/?mibextid=qi2Omg"><i class="fa-brands fa-square-facebook fa-lg linkedin"></i></a>
-        <a href="https://wa.me/message/PRHHUX2R55OBL1"><i class="fa-brands fa-whatsapp fa-lg " style="color: #25d366;"></i></a>
+<a href="https://www.facebook.com/share/NzHysHFCUCr3i66L/?mibextid=qi2Omg"><i class="fa-brands fa-square-facebook fa-lg linkedin"></i></a>
+<a href="https://wa.me/message/PMLBL2U44Y54M1"><i class="fa-brands fa-whatsapp fa-lg " style="color: #25d366;"></i></a>
 
 
-      </div>
-    </div>
-    <div class="col-md-12 text-center copy-right">
-      <p>&copy; 2024 IMZ Business. All rights reserved.</p>
-    </div>
+</div>
+</div>
+<div class="col-md-12 text-center copy-right">
+  <p>&copy; 2024 IMZ Business Solutions. All rights reserved.</p>
+</div>
 
-  </footer>
-  <!-- End of Footer -->
-    
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+</footer>
+<!-- End of Footer -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" type="text/plain"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
